@@ -14,7 +14,7 @@ const $$BookScore = createComponent(async ($$result, $$props, $$slots) => {
   const res = await fetch(SCORE_API_ENDPOINT);
   const scoreValue = await res.text();
   return renderTemplate`${maybeRenderHead()}<span class="text-xs" id="score">
-⭐ Puntuación: ${scoreValue.trim()}/5
+⭐ Puntuación: ${scoreValue.trim()}/50
 </span>`;
 }, "/home/user/astrobooks/src/components/BookScore.astro", void 0);
 
